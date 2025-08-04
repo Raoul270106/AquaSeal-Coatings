@@ -106,12 +106,15 @@
   <div class="container">
     <h2 class="section-title">Contact Us</h2>
     <div class="contact-wrapper">
-      <form action="https://formsubmit.co/youremail@example.com" method="POST" aria-label="Contact form" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required aria-required="true" />
-        <input type="email" name="email" placeholder="Your Email" required aria-required="true" />
-        <textarea name="message" rows="4" placeholder="Your Message" required aria-required="true"></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
+      <form action="https://formsubmit.co/info@aquasealco.za" method="POST" class="contact-form">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://aquasealco.za/thank-you.html">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
       <div class="contact-info">
         <p><strong>Phone:</strong> 031‑456‑7890</p>
         <p><strong>Email:</strong> info@aquasealco.za</p>
@@ -120,6 +123,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="map-section">
   <iframe
