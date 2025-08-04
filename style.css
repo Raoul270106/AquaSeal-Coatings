@@ -28,6 +28,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -38,6 +39,8 @@ header {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-nav a {
@@ -90,6 +93,7 @@ header {
 
 .hero-content {
   width: 100%;
+  padding: 0 20px;
 }
 
 .hero h1 {
@@ -280,4 +284,100 @@ header {
   flex: 1 1 320px;
   font-size: 1rem;
   color: #444;
-  line-height: 1
+  line-height: 1.6;
+}
+
+/* ======================== */
+/* Responsive Styles Below  */
+/* ======================== */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cards,
+  .gallery-grid,
+  .review-cards,
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .review-card,
+  .contact-form,
+  .contact-info {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .main-nav a {
+    font-size: 0.95rem;
+  }
+
+  .card img,
+  .gallery-grid img {
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+}
